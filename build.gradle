@@ -45,8 +45,12 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.thymeleaf:thymeleaf-spring4")
-    compile("mysql:mysql-connector-java")
     compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("mysql:mysql-connector-java")
+    compile("com.alibaba:druid:1.0.29")
+
+    //启用actuator
+    compile("org.springframework.boot:spring-boot-starter-actuator")
 }
 
 task wrapper(type: Wrapper) {
